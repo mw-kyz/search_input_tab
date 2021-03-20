@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>腾讯课堂课程分类</title>
+	<link rel="stylesheet" href="index.css" />
+</head>
+<body>
+	<div class="courses-wrap">
+		<input type="text" id="js-serach-input" class="search-input" placeholder="搜索课程">
+		<div class="course-tab">
+			<ul class="course-tab-list js-course-tab-list clearfix">
+				<li class="tab-item">
+					<a href="javascript:;" class="course-tab-lk current" data-field="all">全部</a>
+				</li>
+				<li class="tab-item">
+					<a href="javascript:;" class="course-tab-lk" data-field="free">公益课程</a>
+				</li>
+				<li class="tab-item">
+					<a href="javascript:;" class="course-tab-lk" data-field="vip">就业班课程</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="course-card-list-wrap">
+			<ul class="course-card-list js-course-card-list">
+			</ul>
+		</div>
+	</div>
+
+	<div id="js-course-data" style="display: none;">
+		[{"id": "1","course":"前端开发之企业级深度JavaScript特训课【JS++前端】","classes":"19","teacher":"小野","img":"1.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "2","course":"WEB前端工程师就业班之深度JS DOM+讲师辅导-第3期【JS++前端】","classes":"22","teacher":"小野","img":"2.jpg","is_free":"0","datetime":"1540454477","price":"699"},
+		{"id": "3","course":"前端开发之企业级深度HTML特训课【JS++前端】","classes":"3","teacher":"小野","img":"3.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "4","course":"前端开发之企业级深度CSS特训课【JS++前端】","classes":"5","teacher":"小野","img":"4.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "5","course":"前端就业班VueJS+去哪儿网+源码课+讲师辅导-第3期【JS++前端】","classes":"50","teacher":"哈默","img":"5.jpg","is_free":"0","datetime":"1540454477","price":"1280"},
+		{"id": "6","course":"前端就业班ReactJS+新闻头条实战+讲师辅导-第3期【JS++前端】","classes":"21","teacher":"托尼","img":"6.jpg","is_free":"0","datetime":"1540454477","price":"2180"},
+		{"id": "7","course":"WEB前端开发工程师就业班-直播/录播+就业辅导-第3期【JS++前端】","classes":"700","teacher":"JS++名师团","img":"7.jpg","is_free":"0","datetime":"1540454477","price":"4980"},
+		{"id": "8","course":"前端开发之企业级深度JavaScript特训课【JS++前端】","classes":"19","teacher":"小野","img":"1.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "9","course":"WEB前端工程师就业班之深度JS DOM+讲师辅导-第3期【JS++前端】","classes":"22","teacher":"小野","img":"2.jpg","is_free":"0","datetime":"1540454477","price":"699"},
+		{"id": "10","course":"前端开发之企业级深度HTML特训课【JS++前端】","classes":"3","teacher":"小野","img":"3.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "11","course":"前端开发之企业级深度CSS特训课【JS++前端】","classes":"5","teacher":"小野","img":"4.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "12","course":"前端就业班VueJS+去哪儿网+源码课+讲师辅导-第3期【JS++前端】","classes":"50","teacher":"哈默","img":"5.jpg","is_free":"0","datetime":"1540454477","price":"1280"},
+		{"id": "13","course":"前端就业班ReactJS+新闻头条实战+讲师辅导-第3期【JS++前端】","classes":"21","teacher":"托尼","img":"6.jpg","is_free":"0","datetime":"1540454477","price":"2180"},
+		{"id": "14","course":"WEB前端开发工程师就业班-直播/录播+就业辅导-第3期【JS++前端】","classes":"700","teacher":"JS++名师团","img":"7.jpg","is_free":"0","datetime":"1540454477","price":"4980"},
+		{"id": "1","course":"前端开发之企业级深度JavaScript特训课【JS++前端】","classes":"19","teacher":"小野","img":"1.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "15","course":"WEB前端工程师就业班之深度JS DOM+讲师辅导-第3期【JS++前端】","classes":"22","teacher":"小野","img":"2.jpg","is_free":"0","datetime":"1540454477","price":"699"},
+		{"id": "3","course":"前端开发之企业级深度HTML特训课【JS++前端】","classes":"3","teacher":"小野","img":"3.jpg","is_free":"1","datetime":"1540454477","price":"0"},
+		{"id": "16","course":"前端开发之企业级深度CSS特训课【JS++前端】","classes":"5","teacher":"小野","img":"4.jpg","is_free":"1","datetime":"1540454477","price":"0"}]
+	</div>
+
+	<script type="text/html" id="js-card-item-tpl">
+		<li class="card-item">
+					<a href="javascript:;" class="img-lk">
+						<img src="img/{{img}}" alt="" />
+					</a>
+					<div class="item-status">
+						<span class="item-status-text">随到随学</span>
+					</div>
+					<h4 class="item-tt">
+						<a href="" class="tt-lk">{{courseName}}</a>
+					</h4>
+					<div class="item-line">
+						<span class="item-price {{isFree}}">{{price}}</span>
+						<span class="item-info">{{hours}}课时</span>
+					</div>
+				</li>
+	</script>
+
+	<script src="index.js"></script>
+</body>
+</html>

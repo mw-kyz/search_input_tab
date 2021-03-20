@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	/*让内边距和边框在内部绘制，不增加width*/
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+img {
+	width: 100%;
+}
+
+h4 {
+	font-weight: normal;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.courses-wrap {
+	width: 1200px;
+	margin: 100px auto;
+}
+
+.search-input {
+	display: block;
+	width: 250px;
+	height: 35px;
+	margin: 20px auto;
+	outline: none;
+	text-indent: 8px;
+	font-size: 14px;
+}
+
+.course-tab {
+	width: 100%;
+	height: 42px;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	border: 1px solid #efefef;
+	background-color: #f5f5f5;
+}
+
+.course-tab .tab-item {
+	float: left;
+	height: 40px;
+	margin-right: 40px;
+	line-height: 40px;
+}
+
+.course-tab .course-tab-lk {
+	font-size: 14px;
+}
+
+.course-tab .course-tab-lk.current {
+	color: #167ed9;
+}
+
+.course-card-list-wrap {
+	width: 1200px;
+	height: 500px;
+}
+
+.course-card-list-wrap .course-card-list {
+	width: 1230px;
+	height: 500px;
+	margin-left: -17px;
+}
+
+.course-card-list-wrap .course-card-list .course-list-tip {
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	font-size: 24px;
+	color: #999;
+}
+
+.course-card-list-wrap .card-item {
+	float: left;
+	width: 236px;
+	height: 221px;
+	margin: 0 0 20px 9px;
+	padding: 7px 7px 10px 7px;
+	border: 1px solid transparent;
+}
+
+.course-card-list-wrap .card-item:hover {
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 2px 1px #ececec;
+}
+
+.course-card-list-wrap .card-item .img-lk {
+	display: block;
+	width: 220px;
+	height: 124px;
+	margin-bottom: 6px;
+}
+
+.course-card-list-wrap .card-item .item-status {
+	position: relative;
+	z-index: 1;
+	width: 220px;
+	height: 24px;
+	margin-top: -30px;
+	background-color: rgba(0, 0, 0, .5);
+	line-height: 24px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.course-card-list-wrap .card-item .item-status .item-status-text {
+	margin-left: 2px;
+}
+
+.course-card-list-wrap .card-item .item-tt {
+	height: 40px;
+	margin: 3px 0 8px 0;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+.course-card-list-wrap .card-item .item-tt .tt-lk {
+	font-size: 14px;
+}
+
+.course-card-list-wrap .card-item .item-tt .tt-lk:hover {
+	color: #23b8ff;
+}
+
+.course-card-list-wrap .card-item .item-line {
+	height: 24px;
+}
+
+.course-card-list-wrap .card-item .item-line .item-price {
+	font-size: 14px;
+}
+
+.course-card-list-wrap .card-item .item-line .item-price.free {
+	color: #5fb41b;
+}
+
+.course-card-list-wrap .card-item .item-line .item-price.vip {
+	color: #e85308;
+}
+
+.course-card-list-wrap .card-item .item-line .item-info {
+	float: right;
+	margin-top: 4px;
+	font-size: 12px;
+	color: #999;
+}
